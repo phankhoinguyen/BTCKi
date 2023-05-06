@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+        [class*="col-"]{
+            padding-left: 0px;
+            padding-right: 0px;
+            
+        }
+        .navbar-nav li{
+            width: 120px;
+        }
+        .dropdown-menu{
+            width: 200px;
+        }
+        .navbar{
+            position: absolute;
+            top: 130px;
+        }
+        .mySlides {
+            display:none;
+            height: 700px;
+            width:100%;
+        }
+        .social-icon{
+        
+        display: flex;
+    }
+    .social-icon li {
+        list-style: none;
+        margin-top: 10px;
+        margin-left: 5;
+        
+        
+    }
+    
+    .social-icon li a{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #403e3e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-left: 5px;
+    }
+    .social-icon li a:hover{
+        background: #f00;
+    }
+    .social-icon li a .fa{
+        color: #f0e5e5;
+        font-size: 20px;
+    }
+    .navbar_icon {
+        font-size: 50px;
+        margin-left: 800px;
+        
+    }
+    #cart-icon  {
+    cursor: pointer;
+    }
+    #cart-icon:hover{
+        font-size: larger;
+}
+    #user-icon{
+        cursor: pointer;
+    }
+    #user-icon:hover{
+        font-size: larger;
+    }
+    </style>    
+    <script>
+
+    </script>
+    <title>Giới thiêu-Công ty công nghê Đại Nguyên</title>
+</head>
+<body>
+    <div class="container bg-white">
+        <div  class="row col-md-12">
+            <div class="col-md-2 bg-info">
+                <img style="width: 100%;" src="./img/logo.png" alt="">
+                <h6>THIẾT KẾ THI CÔNG HỆ THỐNG MẠNG, CÁP QUANG, CAMERA QUAN SÁT</h6>
+            </div>
+            <div class="col-md-10 bg-info">
+                <div class="navbar_icon ">
+                    <i class="bx bx-cart-alt" id="cart-icon"></i>
+                    <i class='bx bx-user' id="user-icon"></i>
+                </div>
+                <!-- <div class="navbar_user">
+                    <h1>Đăng Nhập</h1>
+                    <div class="form">
+                        <label>Email or Phone</label>
+                        <input type="text">
+                        <label>Password</label>
+                        <input type="password">
+                    </div>
+                    <a href="#" class="user_btn btn">Đăng Nhập</a>
+                    <div class="user-login">
+                        <span>Đăng ký tài khoản</span>
+                        <a href="login.html" >Tại Đây</a>
+                    </div>
+                </div> -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sản phẩm
+                          </a>
+                          <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Thiết bị mạng</a>
+                            <ul>
+                                <li><a class="dropdown-item" href="bodinhtuyen.html">Bộ định tuyến</a></li>
+                                <li><a class="dropdown-item" href="swich.html">Switch mạng</a></li>
+                                <li><a class="dropdown-item" href="bokichsong.html">Bộ kích sóng Wifi</a></li>
+                              </ul>
+                            <a class="dropdown-item" href="#">Router mạng</a>
+                            <a class="dropdown-item" href="#">Máy chấm công</a>
+                            <a class="dropdown-item" href="#">Camera quan sát</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Một vài sản phẩm khác</a>
+                        <li class="nav-item">
+                            <a href="dichvu.html" class="nav-link">Dịch vụ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="lienhe.html" class="nav-link">Liên hệ</a>
+                        </li>
+     
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="row col-md-12">
+            <div class="content">
+                <article id="post-22" class="blog-no-image post-22 page type-page status-publish hentry">
+                    <!--post thumbnal options-->
+                    <header class="entry-header">
+                        <h1 class="entry-title">Giới thiệu</h1>
+                    </header>
+                    <!-- .entry-header -->
+                    <div class="entry-content clearfix">
+                        <p>Lời đầu tiên chúng tôi xin chuyển đến Quý khách hàng những lời chúc tốt đẹp nhất!</p>
+                        <p>
+                            Trong xu thế hội nhập hiện nay việc trang bị hệ thống an ninh – an toàn là rất cần thiết, Công ty <strong>CÔNG NGHỆ ĐẠI NGUYÊN</strong>
+                            chúng tôi là một trong những công ty hàng đầu  chuyên nhập khẩu, cung cấp, thiết kế,lắp đặt các hệ thống:
+                        </p>
+                        <p>
+                            + Thiết bị mạng
+                            + Hệ thống camera quan sát.<br/>
+                            + Hệ thống báo trộm, báo động, chống đột nhập.<br/>
+                            + Hệ thống báo cháy tự động<br/>
+                            + Chuông cửa màn hình<br/>
+                            + Hệ thống mạng Wifi cho tòa nhà<br/>
+                            + Hệ thống âm thanh, Loa thông báo.<br/>+ Thiết kế thi công lắp đặt, hàn nối hệ thống cáp quang.
+                        </p>
+                        <p>
+                            Các sản phẩm và giải pháp của <strong>CÔNG NGHỆ ĐẠI NGUYÊN</strong>
+                            thì việc giám sát của quý khách giờ đây sẽ không chỉ dừng lại ở giám sát nội bộ, giám sát trong phạm vi hẹp mà còn có thể giám sát từ xa. Các thiết bị được tích hợp, kết nối với hệ thống xử lý thông minh còn đem lại cho quý khách các tiện ích siêu việt như: Tự động cảnh báo khi có đột nhập, tự động gửi tin nhắn cảnh báo tới điện thoại của chủ nhà, tự động ghi hình khi phát hiện chuyển động trong vùng theo dői, tự động quét các góc độ theo chương trình đặt trước &#8230;.
+                        </p>
+                        <p>
+                            Với phương châm hoạt động, <strong>“Uy tín – Chất lượng – Giá cả hợp lý”,</strong>
+                            <strong>Công ty TNHH ĐẦU TƯ CÔNG NGHỆ ĐẠI NGUYÊN</strong>
+                            thành lập, tồn tại và phát triển là nhờ sự tín nhiệm của Quý khách hàng. Chính yếu tố này, <strong>Công ty TNHH ĐẦU TƯ CÔNG NGHỆ ĐẠI NGUYÊN </strong>
+                            đã không ngừng phấn đấu hơn nữa để phát triển và đem lại sự hài lòng cho Quý khách. Chúng tôi rất mong nhận được sự hợp tác và ủng hộ của Quý khách .
+                        </p>
+                        <p>
+                            <strong>Mọi thông tin chi tiết xin vui lòng liên hệ: </strong>
+                            <br/>
+                            <strong>CÔNG TY TNHH ĐẦU TƯ CÔNG NGHỆ ĐẠI NGUYÊN</strong>
+                        </p>
+                        <p>Email: nguyendai4713@gmail.com</p>
+                        <p>Website: dainguyentech.vn</p>
+                        <p>ĐT: 0987.83.77.12&#8211;0947.767.934</p>
+                        <p>&nbsp;</p>
+                    </div>
+                    <!-- .entry-content -->
+                </article>
+            </div>
+            <div class="col-md-12" style="background-color: black; color: white;">
+                <footer style="padding: 20px;">  
+                    <h3>CÔNG TY ĐẦU TƯ CÔNG NGHỆ ĐẠI NGUYÊN</h3>
+                    <P>
+                        Địa chỉ: Số 33a, Đường Số 12, P.Hiệp Bình Phước, TP.Thủ Đức, TP.HCM
+                        <br>
+                        Hotline: 0987837712 – 0947767934
+                        <br>
+                        Email: nguyendai4713@gmail.com – khoinguyen@gmail.com
+                    </P>
+                    <ul class="social-icon">
+                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+        
+                </footer>
+            </div>
+            
+        </div> 
+    </div>
+</body>
+</html>

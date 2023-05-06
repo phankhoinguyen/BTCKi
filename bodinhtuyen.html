@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+        [class*="col-"] {
+            padding-left: 0px;
+            padding-right: 0px;
+
+        }
+
+        .navbar-nav li {
+            width: 120px;
+        }
+
+        .dropdown-menu {
+            width: 200px;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 130px;
+        }
+
+        .mySlides {
+            display: none;
+            height: 700px;
+            width: 100%;
+        }
+
+        .social-icon {
+
+            display: flex;
+        }
+
+        .social-icon li {
+            list-style: none;
+            margin-top: 10px;
+            margin-left: 5;
+
+
+        }
+
+        .social-icon li a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #403e3e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+
+        .social-icon li a:hover {
+            background: #f00;
+        }
+
+        .social-icon li a .fa {
+            color: #f0e5e5;
+            font-size: 20px;
+        }
+
+        .navbar_icon {
+            font-size: 50px;
+            margin-left: 800px;
+
+        }
+
+        #cart-icon {
+            cursor: pointer;
+        }
+
+        #cart-icon:hover {
+            font-size: larger;
+        }
+
+        #user-icon {
+            cursor: pointer;
+        }
+
+        #user-icon:hover {
+            font-size: larger;
+        }
+    </style>
+    <script>
+
+    </script>
+    <title>Home-Công ty công nghê Đại Nguyên</title>
+</head>
+
+<body>
+    <div class="container bg-white">
+        <div class="row col-md-12">
+            <div class="col-md-2 bg-info">
+                <img style="width: 100%;" src="./img/logo.png" alt="">
+                <h6>THIẾT KẾ THI CÔNG HỆ THỐNG MẠNG, CÁP QUANG, CAMERA QUAN SÁT</h6>
+            </div>
+            <div class="col-md-10 bg-info">
+                <div class="navbar_icon ">
+                    <i class="bx bx-cart-alt" id="cart-icon"></i>
+                    <i class='bx bx-user' id="user-icon"></i>
+                </div>
+                <!-- <div class="navbar_user">
+                    <h1>Đăng Nhập</h1>
+                    <div class="form">
+                        <label>Email or Phone</label>
+                        <input type="text">
+                        <label>Password</label>
+                        <input type="password">
+                    </div>
+                    <a href="#" class="user_btn btn">Đăng Nhập</a>
+                    <div class="user-login">
+                        <span>Đăng ký tài khoản</span>
+                        <a href=".login.html" >Tại Đây</a>
+                    </div>
+                </div> -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Trang chủ <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sản phẩm
+                                </a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Thiết bị mạng</a>
+                                    <ul>
+                                        <li><a class="dropdown-item" href="bodinhtuyen.html">Bộ định tuyến</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="swich.html">Switch mạng</a></li>
+                                        <li><a class="dropdown-item" href="bokichsong.html">Bộ kích sóng Wifi</a>
+                                        </li>
+                                    </ul>
+                                    <a class="dropdown-item" href="#">Router mạng</a>
+                                    <a class="dropdown-item" href="#">Máy chấm công</a>
+                                    <a class="dropdown-item" href="#">Camera quan sát</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Một vài sản phẩm khác</a>
+                            <li class="nav-item">
+                                <a href="dichvu.html" class="nav-link">Dịch vụ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="lienhe.html" class="nav-link">Liên hệ</a>
+                            </li>
+
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row col-md-12">
+            <div class="content">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/bodinhtuyen1.jpg" alt="Router">
+                            <h3>Router Wi-Fi TP-Link Archer C6</h3>
+                            <p>Giá: 1.990.000đ</p>
+                            <p>Tốc độ truyền dữ liệu tối đa: 1200Mbps</p>
+                            <p>Số cổng LAN: 4</p>
+                            <p>Số cổng WAN: 1</p>
+                            <p>Chuẩn Wi-Fi: 802.11ac/n/a 5GHz và 802.11b/g/n 2.4GHz</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/bodinhtuyen2.jpg" alt="Switch">
+                            <h3>Bộ phát wifi 6 TP-Link Archer AX23 (Chuẩn AX/ AX1800Mbps/ 4 Ăng-ten ngoài/ Wifi Mesh/ 35
+                                User)</h3>
+                            <p>Giá: 1.990.000đ</p>
+                            <p>
+                                Thương hiệu: TP-Link <br>
+                                Tốc độ WIFI: AX1800Mbps <br>
+                                Chuẩn kết nối: Chuẩn AX (Wifi 6) <br>
+                                Angten: 4 Ăng-ten ngoài <br>
+                                Cổng kết nối: 1 cổng WAN Gigabit <br>
+                                Tốc độ LAN: 10/100/1000Mbps <br>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/bodinhtuyen3.jpg" alt="Access point">
+                            <h3>Bộ thu phát wifi Asus RTN12+ 300Mbps</h3>
+                            <p>Giá: 790.000đ</p>
+                            <p>
+                                - Cổng giao tiếp: 1 x RJ45 cho 10/100 BaseT cho mạng WAN, 4 x RJ45 cho 10/100 BaseT cho
+                                mạng LAN <br>
+                                - Tốc độ LAN: 10/100Mbps <br>
+                                - Tốc độ WIFI: Wifi 300Mbps <br>
+                                - Angten: 2 ăng ten <br>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/bodinhtuyen4.jpg" alt="Switch">
+                            <h3>Bộ phát wifi TP-Link Archer C64 (Chuẩn AC/ 1200Mbps/ 4 Ăng-ten ngoài/ Wifi Mesh/ 25
+                                User)</h3>
+                            <p>Giá: 990.000đ</p>
+                            <p>
+                                Tốc độ WIFI: AC1200: 5 GHz: 867 Mbps (802.11ac)<br>
+                                2.4 GHz: 400 Mbps (802.11n)<br>
+                                Angten: 4 Ăng-ten ngoài<br>
+                                Cổng kết nối: 1 x Cổng WAN Gigabit, 4 x Cổng LAN Gigabit<br>
+                                Tốc độ LAN: 10/100/1000Mbps<br>
+                                Chuẩn kết nối: Chuẩn AC<br>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#">Xem tất cả sản phẩm</a>
+
+
+
+
+
+            </div>
+            <div class="col-md-12" style="background-color: black; color: white;">
+                <footer style="padding: 20px;">
+                    <h3>CÔNG TY ĐẦU TƯ CÔNG NGHỆ ĐẠI NGUYÊN</h3>
+                    <P>
+                        Địa chỉ: Số 33a, Đường Số 12, P.Hiệp Bình Phước, TP.Thủ Đức, TP.HCM
+                        <br>
+                        Hotline: 0987837712 – 0947767934
+                        <br>
+                        Email: nguyendai4713@gmail.com – khoinguyen@gmail.com
+                    </P>
+                    <ul class="social-icon">
+                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+
+                </footer>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

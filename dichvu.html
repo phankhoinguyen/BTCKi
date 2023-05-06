@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+        [class*="col-"] {
+            padding-left: 0px;
+            padding-right: 0px;
+
+        }
+
+        .navbar-nav li {
+            width: 120px;
+        }
+
+        .dropdown-menu {
+            width: 200px;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 130px;
+        }
+
+        .mySlides {
+            display: none;
+            height: 700px;
+            width: 100%;
+        }
+
+        .social-icon {
+
+            display: flex;
+        }
+
+        .social-icon li {
+            list-style: none;
+            margin-top: 10px;
+            margin-left: 5;
+
+
+        }
+
+        .social-icon li a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #403e3e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+
+        .social-icon li a:hover {
+            background: #f00;
+        }
+
+        .social-icon li a .fa {
+            color: #f0e5e5;
+            font-size: 20px;
+        }
+
+        .navbar_icon {
+            font-size: 50px;
+            margin-left: 800px;
+
+        }
+
+        #cart-icon {
+            cursor: pointer;
+        }
+
+        #cart-icon:hover {
+            font-size: larger;
+        }
+
+        #user-icon {
+            cursor: pointer;
+        }
+
+        #user-icon:hover {
+            font-size: larger;
+        }
+    </style>
+    <script>
+
+    </script>
+    <title>Dịch vụ-Công ty công nghê Đại Nguyên</title>
+</head>
+
+<body>
+    <div class="container bg-white">
+        <div class="row col-md-12">
+            <div class="col-md-2 bg-info">
+                <img style="width: 100%;" src="./img/logo.png" alt="">
+                <h6>THIẾT KẾ THI CÔNG HỆ THỐNG MẠNG, CÁP QUANG, CAMERA QUAN SÁT</h6>
+            </div>
+            <div class="col-md-10 bg-info">
+                <div class="navbar_icon ">
+                    <i class="bx bx-cart-alt" id="cart-icon"></i>
+                    <i class='bx bx-user' id="user-icon"></i>
+                </div>
+                <!-- <div class="navbar_user">
+                    <h1>Đăng Nhập</h1>
+                    <div class="form">
+                        <label>Email or Phone</label>
+                        <input type="text">
+                        <label>Password</label>
+                        <input type="password">
+                    </div>
+                    <a href="#" class="user_btn btn">Đăng Nhập</a>
+                    <div class="user-login">
+                        <span>Đăng ký tài khoản</span>
+                        <a href="login.html" >Tại Đây</a>
+                    </div>
+                </div> -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Trang chủ <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sản phẩm
+                                </a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Thiết bị mạng</a>
+                                    <ul>
+                                        <li><a class="dropdown-item" href="bodinhtuyen.html">Bộ định tuyến</a></li>
+                                        <li><a class="dropdown-item" href="swich.html">Switch mạng</a></li>
+                                        <li><a class="dropdown-item" href="bokichsong.html">Bộ kích sóng Wifi</a></li>
+                                    </ul>
+                                    <a class="dropdown-item" href="#">Router mạng</a>
+                                    <a class="dropdown-item" href="#">Máy chấm công</a>
+                                    <a class="dropdown-item" href="#">Camera quan sát</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Một vài sản phẩm khác</a>
+                            <li class="nav-item">
+                                <a href="dichvu.html" class="nav-link">Dịch vụ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="lienhe.html" class="nav-link">Liên hệ</a>
+                            </li>
+
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row col-md-12">
+            <div class="content">
+                <main id="main" class="site-main">
+                    <article id="post-758" class="blog-no-image post-758 page type-page status-publish hentry">
+                        <!--post thumbnal options-->
+                        <header class="entry-header">
+                            <h1 class="entry-title">Thi công lắp đặt camera giám sát cho công ty</h1>
+                        </header>
+                        <!-- .entry-header -->
+                        <div class="entry-content clearfix">
+                            <p>
+                                Bạn vừa mới mở công ty và công việc ban đầu quá bận rộn khiến bạn không thể kiểm soát
+                                hết toàn hệ thống và nhân viên công ty. Vì thế, một giải pháp giúp bạn dễ dàng nắm bắt
+                                hơn lúc này chính là chiếc camera giám sát. Vậy bạn đã tìm được đơn vị thi công
+                                <a href="index.html">
+                                    <strong>lắp đặt camera giám sát</strong>
+                                </a>
+                                cho công ty, cho cơ sở mình chưa? Nếu chưa hãy cùng tham khảo nội dung dưới đây.
+                            </p>
+                            <p>
+                                <strong>
+                                    <span style="color: #ff0000;">&gt;&gt;Xem thêm:</span>
+                                </strong>
+                                <strong>
+                                    <a href="index.html">Tư vấn, thi công lắp đặt
+                                        Camera cho gia đình</a>
+                                </strong>
+                            </p>
+                            <h2>
+                                <strong>Sự cần thiết của việc lắp đặt camera giám sát cho công ty</strong>
+                            </h2>
+                            <p>Nhịp sống hối hả, bận rộn như thế này thì quả thật bạn không thể có đủ thời gian và công
+                                sức để có thể giám sát hết mọi hoạt động tại công ty mình. Tuy nhiên, tính chất công
+                                việc bắt buộc bạn phải nắm bắt tất cả “nhất cử nhất động” tại đó, vậy thì hãy sử dụng
+                                những chiếc camera giám sát, nó sẽ thay bạn đảm nhận trọng trách này một cách hiệu quả.
+                            </p>
+                            <p>Với hệ thống camera có kết nối internet sẽ mang đến cho công ty bạn nhiều lợi ích không
+                                tưởng, cụ thể:</p>
+                            <ul>
+                                <li>
+                                    <strong>
+                                        <em>Lắp đặt camera giám sát giúp tiết kiệm chi phí</em>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <p>Thông qua đây bạn không cần phải thuê nhân viên quản lý, giám sát, hơn nữa lại có thể
+                                điều hành và xử lý mọi sự cố xảy ra nhanh chóng. Thời gian rảnh còn lại bạn có thể làm
+                                được nhiều việc hơn, từ đó sẽ tiết kiệm được nhiều khoản chi phí không đáng có.</p>
+                            <ul>
+                                <li>
+                                    <strong>
+                                        <em>Lắp đặt camera giám sát giúp kiểm soát công việc hiệu quả</em>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <p>Một trong những lợi ích vượt trội của chiếc camera giám sát là bạn có thể theo dõi tình
+                                hình công ty bạn mọi lúc, mọi nơi, mọi thời điểm (trong đó có cả nhân viên) nên chắc hẳn
+                                phần nào yên tâm hơn trong công việc.</p>
+                            <ul>
+                                <li>
+                                    <strong>
+                                        <em>Lắp đặt camera giám sát giúp đảm bảo an ninh cho nhà xưởng</em>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <p>
+                                Tình trạng trộm cắp không thể tránh khỏi ở những cơ sở làm ăn lớn, nhưng khi <strong>lắp
+                                    đặt camera giám sát </strong>
+                                giúp bạn phát hiện, xử lý được các tình huống bất thường kịp thời, tránh được nạn trộm
+                                cắp tài sản, gây thất thoát cho công ty.
+                            </p>
+                            <p style="text-align: center;">
+                                <strong>
+                                    <span style="color: #ff0000;">HOTLINE: 00987837712 – 0947767934</span>
+                                </strong>
+                            </p>
+                            <p style="text-align: center;">
+                                <span style="color: #ff0000;">
+                                    <strong>GỬI YÊU CẦU BÁO GIÁ, TƯ VẤN MIỄN PHÍ</strong>
+                                </span>
+                            </p>
+                            <p style="text-align: center;">
+                            <div role="form" class="wpcf7" id="wpcf7-f26-p758-o1" lang="vi" dir="ltr">
+                                <div class="screen-reader-response"></div>
+                                <form action="/lap-dat-camera-giam-sat-cho-cong-ty/#wpcf7-f26-p758-o1" method="post"
+                                    class="wpcf7-form" novalidate="novalidate">
+                                    <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="26" />
+                                        <input type="hidden" name="_wpcf7_version" value="5.0.2" />
+                                        <input type="hidden" name="_wpcf7_locale" value="vi" />
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f26-p758-o1" />
+                                        <input type="hidden" name="_wpcf7_container_post" value="758" />
+                                    </div>
+                                    <p>
+                                        <label>
+                                            Tên (bắt buộc)<br />
+                                            <span class="wpcf7-form-control-wrap your-name">
+                                                <input type="text" name="your-name" value="" size="40"
+                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                    aria-required="true" aria-invalid="false" />
+                                            </span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            Số điện thoại (bắt buộc)<br />
+                                            <span class="wpcf7-form-control-wrap tel-884">
+                                                <input type="tel" name="tel-884" value="" size="40"
+                                                    class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
+                                                    aria-required="true" aria-invalid="false" />
+                                            </span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            Nội dung<br />
+                                            <span class="wpcf7-form-control-wrap your-message">
+                                                <textarea name="your-message" cols="40" rows="10"
+                                                    class="wpcf7-form-control wpcf7-textarea"
+                                                    aria-invalid="false"></textarea>
+                                            </span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <input type="submit" value="Gởi" class="" />
+                                    </p>
+                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                </form>
+                            </div>
+                            </p>
+                            <h2>
+                                <strong>Thi công lắp đặt camera giám sát cho công ty tại TP.HCM</strong>
+                            </h2>
+                            <p>
+                                Có thể thấy tầm quan trọng của việc thi công lắp đặt camera giám sát 
+                                cho công ty hay nhà xưởng, xí nghiệp,… là vô cùng lớn nên hầu hết hiện nay các cơ sở dù
+                                lớn hay nhỏ đều có nhu cầu sử dụng nó.
+                            </p>
+                            <p>Theo đó, thị trường cũng tung ra nhiều chủng loại camera khác nhau để đáp ứng từng nhu
+                                cầu của khách hàng. Vì thế, trước khi sử dụng bạn nên lưu ý chọn dòng có độ phân giải
+                                cao, chế độ hồng ngoại nhạy. Đặc biệt, hãy tìm mua thương hiệu và một đơn vị thi công
+                                lắp ráp uy tín.</p>
+                            <p>
+                                Công ty Công Nghệ Hoàng Thành thiết kế, thi công lắp đặt mạng, cáp quang, camera giám
+                                sát hàng đầu tại Tp.HCM. Công ty chúng tôi chuyên nhận lắp đặt camera giám
+                                    sát
+                                , quan sát, chống trộm,… đảm bảo chất lượng hình ảnh, ngay cả sau nhiều năm sử dụng.
+                            </p>
+                            <p>+ Không chỉ hỗ trợ lắp đặt ở các công ty mà còn thi công ở nhiều trường học, cửa hàng, xí
+                                nghiệp, xưởng, chung cư, tòa nhà,… Đến với chúng tôi bạn sẽ được:</p>
+                            <p>+ Hỗ trợ tư vấn hoàn toàn miễn phí và được nhân viên công ty đến khảo sát trực tiếp tại
+                                nhà để đưa ra phương án lắp đặt vừa phù hợp, hiệu quả vừa tiết kiệm được chi phí cho
+                                khách hàng.</p>
+                            <p>+ Đội ngũ kỹ sư, công nhân thi công tay nghề cao, nhiều năm kinh nghiệm trong việc lắp
+                                đặt camera giám sát cho công ty, văn phòng, cơ quan,… thực hiện.</p>
+                            <p>+ Hưởng nhiều chế độ ưu đãi, khuyến mãi ở nhiều mặt hàng, thậm chí có thể miễn phí vận
+                                chuyển.</p>
+                            <p>Là một doanh nghiệp luôn hướng đến làm hài lòng khách hàng, vì thế mà những sản phẩm mà
+                                chúng tôi cung cấp đều chất lượng, đặc biệt là dòng camera với giá cả phải chăng.</p>
+                            <p>
+                                Với những lý do này, nếu công ty bạn đang cần thi công <strong>lắp đặt camera giám
+                                    sát</strong>
+                                hãy liên hệ với Hoàng Thành chúng tôi để được tư vấn và hỗ trợ thi công thực hiện.
+                            </p>
+                            <h2 style="text-align: center;">
+                                <strong>CÔNG TY CÔNG NGHỆ ĐẠI NGUYÊN</strong>
+                            </h2>
+                            <p style="text-align: center;">
+                                Đơn vị chuyên thi công thi công lắp đặt hệ thống camera quan sát chuyên nghiệp, uy
+                                tín.<br />
+                                <strong>
+                                    <em>Địa chỉ:</em>
+                                </strong>
+                                Số 33a Đường Số 12 P. Hiệp Bình Phước, Q. Thủ Đức, TP.HCM.<br />
+                                <strong>Số điện thoại:</strong>
+                                0987837712 – 0947767934
+                            </p>
+                        </div>
+                        <!-- .entry-content -->
+                    </article>
+                    <!-- #post-## -->
+                </main>
+            </div>
+            <div class="col-md-12" style="background-color: black; color: white;">
+                <footer style="padding: 20px;">
+                    <h3>CÔNG TY ĐẦU TƯ CÔNG NGHỆ ĐẠI NGUYÊN</h3>
+                    <P>
+                        Địa chỉ: Số 33a, Đường Số 12, P.Hiệp Bình Phước, TP.Thủ Đức, TP.HCM
+                        <br>
+                        Hotline: 0987837712 – 0947767934
+                        <br>
+                        Email: nguyendai4713@gmail.com – khoinguyen@gmail.com
+                    </P>
+                    <ul class="social-icon">
+                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+
+                </footer>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
