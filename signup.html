@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/base.css">
+
+
+
+
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <script src="./js/jquery-3.6.4.min.js"></script>
@@ -14,6 +19,79 @@
   <script>
 
   </script>
+  <script src="./js/main.js"></script>
+  <style>
+    
+    #wrapper {
+            min-height:     300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 350px;
+        }
+
+        #form-login {
+            width: 500px;
+            max-width: 1000px;
+            background: rgba(0, 0, 0, 0.8);
+            flex-grow: 1;
+            padding: 30px 30px 40px;
+            box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
+        }
+
+        .form-heading {
+            font-size: 25px;
+            color: #f5f5f5;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            border-bottom: 1px solid #fff;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            display: flex;
+        }
+
+        .form-group i {
+            color: #fff;
+            font-size: 14px;
+            padding-top: 5px;
+            padding-right: 10px;
+        }
+
+        .form-input {
+            background: transparent;
+            border: 0;
+            outline: 0;
+            color: #f5f5f5;
+            flex-grow: 1;
+        }
+
+        .form-input::placeholder {
+            color: #f5f5f5;
+        }
+
+        #eye i {
+            padding-right: 0;
+            cursor: pointer;
+        }
+
+        .form-submit {
+            background: transparent;
+            border: 1px solid #f5f5f5;
+            color: #fff;
+            width: 100%;
+            text-transform: uppercase;
+            padding: 6px 10px;
+            transition: 0.25s ease-in-out;
+            margin-top: 30px;
+        }
+
+        .form-submit:hover {
+            border: 1px solid #54a0ff;
+        }
+  </style>
   <title>Home-Công ty công nghê Đại Nguyên</title>
 </head>
 
@@ -34,6 +112,7 @@
             </ul>
           </div>
         </div>
+
         <!-- <div class="navbar_user">
                     <h1>Đăng Nhập</h1>
                     <div class="form">
@@ -99,26 +178,45 @@
     </div>
     <div class="row col-md-12">
       <div class="content">
-        <div class="slide">
-          <img src="./img/slider1.png" class="mySlides">
-          <img src="./img/slider2.png" class="mySlides">
-          <img src="./img/slider3.png" class="mySlides">
+       
+        <div id="wrapper">
+            <form action="" id="form-login">
+                <h1 class="form-heading">Đăng ký</h1>
+                <div class="form-group">
+                    <i class="far fa-user"></i>
+                    <input type="text" class="form-input" placeholder="Tên đăng nhập" id="txtMa">
+                    <span id="tbMa" class="text-danger">*</span>
+                </div>
+                <div class="form-group">
+                    <i class="far fa-user"></i>
+                    <input type="email" class="form-input" placeholder="Tên email" id="txtEmail">
+                </div>
+                <div class="form-group">
+                    <i class="far fa-user"></i>
+                    <input type="text" class="form-input" placeholder="Họ Tên" id="txtName">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-key"></i>
+                    <input type="password" class="form-input" placeholder="Mật khẩu" id="txtPassword">
+                    <div id="eye">
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-key"></i>
+                    <input type="password" class="form-input" placeholder="Nhập Lại  Mật khẩu" id="checkPass">
+                    <div id="eye">
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+                <a href="signin.html">Đăng Nhập</a>
+                <input type="submit" value="Đăng ký" class="form-submit" >
+            </form>
         </div>
-        <script>
-          var myIndex = 0;
-          carousel();
-          function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 2000); // Change image every 2 seconds
-          }
-        </script>
+        
+
+
+
       </div>
       <div class="col-md-12" style="background-color: black; color: white;">
         <footer style="padding: 20px;">
